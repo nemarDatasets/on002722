@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "A dataset recorded during development of an affective brain-computer music interface: calibration session",
-  "description": "This dataset contains electroencephalogram (EEG), galvanic skin response (GSR), and electrocardiogram (ECG) recordings from 19 healthy adult participants during a calibration session of an affective brain-computer music interface system. Participants listened to 40-second synthetic music clips designed to induce specific affective states defined by valence and arousal dimensions across 5 runs of 18 trials each. The dataset includes self-reported affective state ratings and auxiliary variables, serving as calibration data for real-time online modification of music to induce target emotional states. Note: Initial recruitment included 20 volunteers; data from 19 participants are included in this dataset. This dataset is licensed under Creative Commons Attribution 4.0 International Licence.",
-  "methods_description": "EEG, GSR, and ECG data were recorded at 1 kHz sampling rate from 19 healthy adult participants during listening to synthetic music clips (40 s duration). Each clip targeted two affective states sequentially (first 20 s for state 1, remaining 20 s for state 2), with 5 runs of 18 music trials per session. Participants provided self-reported valence and arousal ratings for each trial. The synthetic music clips were generated using a music generator based on target emotional states defined by valence (LOW/NEUTRAL/HIGH) and arousal (LOW/NEUTRAL/HIGH) dimensions.",
+  "description": "This dataset contains electroencephalogram (EEG), galvanic skin response (GSR), and electrocardiogram (ECG) recordings from 19 healthy adult participants during a calibration session of an affective brain-computer music interface system. Participants listened to 40-second synthetic music clips designed to induce specific affective states defined by valence and arousal dimensions across 5 runs of 18 trials each. The synthetic music was generated in real-time based on target emotional states and could be modified online to induce target emotional states. The dataset includes self-reported affective state ratings and auxiliary variables, serving as calibration data for the brain-computer music interface system. This dataset is part of a three-dataset collection that includes offline training and online real-time control sessions.",
+  "methods_description": "EEG, GSR, and ECG data were recorded at 1 kHz sampling rate from 19 healthy adult participants during listening to synthetic music clips (40 s duration). Each clip targeted two affective states sequentially (first 20 s for state 1, remaining 20 s for state 2), with 5 runs of 18 music trials per session. The synthetic music clips were generated in real-time by a music generator based on target emotional states defined by valence (LOW/NEUTRAL/HIGH) and arousal (LOW/NEUTRAL/HIGH) dimensions. Participants provided self-reported valence and arousal ratings for each trial.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -24,46 +24,53 @@
   },
   "keywords": [
     {
-      "term": "EEG"
+      "term": "EEG",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
-      "term": "brain-computer interface"
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
       "term": "emotion recognition"
     },
     {
-      "term": "affective computing"
-    },
-    {
       "term": "music perception"
     },
     {
-      "term": "valence and arousal"
+      "term": "affective computing"
     },
     {
-      "term": "physiological signals"
+      "term": "galvanic skin response"
     },
     {
-      "term": "GSR"
+      "term": "Galvanic Skin Response",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005712"
     },
     {
-      "term": "ECG"
+      "term": "Electrocardiography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004562"
     },
     {
-      "term": "music interface"
+      "term": "Emotions",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004644"
     },
     {
       "term": "calibration"
     },
     {
+      "term": "valence"
+    },
+    {
+      "term": "arousal"
+    },
+    {
       "term": "synthetic music"
-    },
-    {
-      "term": "affective states"
-    },
-    {
-      "term": "music generation"
     }
   ],
   "related_identifiers": [
