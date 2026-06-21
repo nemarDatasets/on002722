@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "A dataset recorded during development of an affective brain-computer music interface: calibration session",
+  "description": "This dataset contains electroencephalogram (EEG), galvanic skin response (GSR), and electrocardiogram (ECG) recordings from 19 healthy adult participants during a calibration session of an affective brain-computer music interface system. Participants listened to 40-second synthetic music clips designed to induce specific affective states defined by valence and arousal dimensions across 5 runs of 18 trials each. The dataset includes self-reported affective state ratings and auxiliary variables, serving as calibration data for real-time online modification of music to induce target emotional states. Note: Initial recruitment included 20 volunteers; data from 19 participants are included in this dataset. This dataset is licensed under Creative Commons Attribution 4.0 International Licence.",
+  "methods_description": "EEG, GSR, and ECG data were recorded at 1 kHz sampling rate from 19 healthy adult participants during listening to synthetic music clips (40 s duration). Each clip targeted two affective states sequentially (first 20 s for state 1, remaining 20 s for state 2), with 5 runs of 18 music trials per session. Participants provided self-reported valence and arousal ratings for each trial. The synthetic music clips were generated using a music generator based on target emotional states defined by valence (LOW/NEUTRAL/HIGH) and arousal (LOW/NEUTRAL/HIGH) dimensions.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -20,12 +22,51 @@
     "Eduardo Miranda": {},
     "Slawomir J. Nasuto": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds002722.v1.0.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "emotion recognition"
+    },
+    {
+      "term": "affective computing"
+    },
+    {
+      "term": "music perception"
+    },
+    {
+      "term": "valence and arousal"
+    },
+    {
+      "term": "physiological signals"
+    },
+    {
+      "term": "GSR"
+    },
+    {
+      "term": "ECG"
+    },
+    {
+      "term": "music interface"
+    },
+    {
+      "term": "calibration"
+    },
+    {
+      "term": "synthetic music"
+    },
+    {
+      "term": "affective states"
+    },
+    {
+      "term": "music generation"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on002722",
       "identifier_type": "URL",
@@ -45,84 +86,11 @@
       "identifier": "10.1038/sdata.2018.203",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
-    }
-  ],
-  "modalities": [
-    "eeg"
-  ],
-  "resource_type_specific": "EEG Dataset",
-  "sizes": [
-    "0.0 KB (1 files)"
-  ],
-  "formats": [
-    ".edf",
-    ".gitattributes",
-    ".json",
-    ".m",
-    ".md",
-    ".tsv",
-    ".wav"
-  ],
-  "description": "This dataset contains electroencephalogram (EEG), galvanic skin response (GSR), and electrocardiogram (ECG) recordings from 19 healthy adult participants during a calibration session of an affective brain-computer music interface system. Participants listened to 40-second synthetic music clips designed to induce specific affective states defined by valence and arousal dimensions across 5 runs of 18 trials each. The dataset includes self-reported affective state ratings and auxiliary variables, serving as calibration data for real-time online modification of music to induce target emotional states. This is the first dataset in a 3-dataset series (calibration, offline training, online real-time control). This dataset accompanies the publication by Daly et al. (2018) in Scientific Data.",
-  "methods_description": "EEG, GSR, and ECG data were recorded at 1 kHz sampling rate from 19 healthy adult participants during listening to synthetic music clips (40 s duration). Each clip targeted two affective states sequentially (first 20 s for state 1, remaining 20 s for state 2), with 5 runs of 18 music trials per session. Participants provided self-reported valence and arousal ratings for each trial. The synthetic music clips were generated using a real-time music generator based on target emotional states defined by valence (LOW/NEUTRAL/HIGH) and arousal (LOW/NEUTRAL/HIGH) dimensions.",
-  "keywords": [
-    {
-      "term": "EEG"
     },
     {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
-      "term": "brain-computer interface"
-    },
-    {
-      "term": "emotion recognition"
-    },
-    {
-      "term": "Affective Computing",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D056912"
-    },
-    {
-      "term": "music perception"
-    },
-    {
-      "term": "valence"
-    },
-    {
-      "term": "arousal"
-    },
-    {
-      "term": "emotion induction"
-    },
-    {
-      "term": "Music Therapy",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D009147"
-    },
-    {
-      "term": "physiological signals"
-    },
-    {
-      "term": "calibration"
-    },
-    {
-      "term": "Galvanic Skin Response",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D005712"
-    },
-    {
-      "term": "Electrocardiography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004562"
-    },
-    {
-      "term": "synthetic music"
-    },
-    {
-      "term": "real-time"
+      "identifier": "10.18112/openneuro.ds002722.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -135,5 +103,22 @@
       "award_number": "EP/J002135/1"
     }
   ],
-  "source_hash": "0659014cd3e3d3be2dc4cf7c51860a3678fbbf7166fd7a57595320e60f0b32d8"
+  "resource_type_specific": "EEG Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "sizes": [
+    "6.5 GB (312 files)"
+  ],
+  "formats": [
+    ".edf",
+    ".gitattributes",
+    ".json",
+    ".m",
+    ".md",
+    ".tsv",
+    ".wav",
+    ".yml"
+  ],
+  "source_hash": "2f3839ab548fda661d2a018dfcf4c862812fb1ef5be621221e92daa8f45fa755"
 }
