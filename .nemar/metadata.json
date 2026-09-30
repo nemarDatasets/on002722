@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "A dataset recorded during development of an affective brain-computer music interface: calibration session",
-  "description": "This dataset contains electroencephalogram (EEG), galvanic skin response (GSR), and electrocardiogram (ECG) recordings from 19 healthy adult participants during a calibration session of an affective brain-computer music interface system. Participants listened to 40-second synthetic music clips designed to induce specific affective states defined by valence and arousal dimensions across 5 runs of 18 trials each. The synthetic music was generated in real-time based on target emotional states and could be modified online to induce target emotional states. The dataset includes self-reported affective state ratings and auxiliary variables, serving as calibration data for the brain-computer music interface system. This dataset is part of a three-dataset collection that includes offline training and online real-time control sessions.",
-  "methods_description": "EEG, GSR, and ECG data were recorded at 1 kHz sampling rate from 19 healthy adult participants during listening to synthetic music clips (40 s duration). Each clip targeted two affective states sequentially (first 20 s for state 1, remaining 20 s for state 2), with 5 runs of 18 music trials per session. The synthetic music clips were generated in real-time by a music generator based on target emotional states defined by valence (LOW/NEUTRAL/HIGH) and arousal (LOW/NEUTRAL/HIGH) dimensions. Participants provided self-reported valence and arousal ratings for each trial.",
+  "description": "EEG, galvanic skin response (GSR) and electrocardiogram (ECG) recordings from healthy adult volunteers listening to 40-s synthetic music clips designed to target specific affective states defined by valence and arousal. The data were collected to calibrate an affective brain-computer music interface that induces target emotional states through real-time modification of generated music. Each session comprised 5 runs of 18 music trials, and self-reported valence and arousal ratings are included. This is the calibration dataset of three related datasets from the BCMI-MIdAS project.",
+  "methods_description": "Participants listened to 40-s music clips from a synthetic music generator, with the first 20 s targeting one affective state and the last 20 s targeting a second state. Each participant completed one session of 5 runs with 18 trials each. EEG, GSR and ECG were recorded at 1 kHz, and participants reported valence and arousal.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -24,36 +24,17 @@
   },
   "keywords": [
     {
-      "term": "EEG",
+      "term": "EEG"
+    },
+    {
+      "term": "Electroencephalography",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
-      "term": "Brain-Computer Interfaces",
+      "term": "Music",
       "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
-      "term": "emotion recognition"
-    },
-    {
-      "term": "music perception"
-    },
-    {
-      "term": "affective computing"
-    },
-    {
-      "term": "galvanic skin response"
-    },
-    {
-      "term": "Galvanic Skin Response",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D005712"
-    },
-    {
-      "term": "Electrocardiography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004562"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D009146"
     },
     {
       "term": "Emotions",
@@ -61,16 +42,13 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D004644"
     },
     {
-      "term": "calibration"
+      "term": "brain-computer interface"
     },
     {
-      "term": "valence"
+      "term": "affective state"
     },
     {
-      "term": "arousal"
-    },
-    {
-      "term": "synthetic music"
+      "term": "galvanic skin response"
     }
   ],
   "related_identifiers": [
@@ -80,24 +58,19 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on002722",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.1145/3059005",
       "identifier_type": "DOI",
       "relation_type": "References"
     },
     {
-      "identifier": "10.1038/sdata.2018.203",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds002722.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on002722",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -115,7 +88,7 @@
     "eeg"
   ],
   "sizes": [
-    "6.5 GB (312 files)"
+    "6.10 GB (312 files)"
   ],
   "formats": [
     ".edf",
